@@ -1,0 +1,304 @@
+:root {
+  --bg: #f8fbff;
+  --surface: #ffffff;
+  --text: #102a43;
+  --muted: #617d98;
+  --primary: #0f4c81;
+  --primary-soft: #dbe9ff;
+  --secondary: #4ca1af;
+  --accent: #f9c74f;
+  --shadow: 0 24px 50px rgba(15, 76, 129, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+.site-header .navbar {
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.site-header.sticky-top .navbar {
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+.navbar-brand {
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+}
+
+.brand-mark,
+.footer-mark {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.85rem;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 0.5rem;
+  transition: color 0.25s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--primary);
+}
+
+.hero-section {
+  padding: 4rem 0 3.5rem;
+}
+
+.hero-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 420px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.product-card img,
+.team-card img,
+.contact-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.team-card img {
+  height: 300px;
+}
+
+.hero-card:hover {
+  transform: translateY(-8px);
+}
+
+.section-title p {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.section-title h2 {
+  font-size: clamp(2rem, 2.5vw, 2.75rem);
+}
+
+.product-card,
+.service-card,
+.team-card,
+.info-card,
+.contact-card,
+.contact-form-card,
+.feature-panel,
+.service-panel,
+.callout-card,
+.features-card {
+  border-radius: 1.5rem;
+}
+
+.product-card img,
+.team-card img {
+  transition: transform 0.35s ease;
+}
+
+.product-card:hover img,
+.team-card:hover img {
+  transform: scale(1.03);
+}
+
+.card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.product-card .card-body {
+  min-height: 12rem;
+}
+
+.product-card .card-footer {
+  padding-top: 0.9rem;
+  padding-bottom: 1rem;
+}
+
+.badge {
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.icon-box {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+}
+
+.feature-item .feature-icon,
+.contact-icon {
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+
+.feature-item .feature-icon {
+  font-size: 1.1rem;
+}
+
+.cta-section {
+  padding: 4rem 0;
+}
+
+.callout-card {
+  border: 1px solid rgba(15, 76, 129, 0.08);
+}
+
+.site-footer {
+  background-color: #0f1f34;
+}
+
+.site-footer a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.site-footer a:hover {
+  color: #fff;
+}
+
+.footer-links li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links li a {
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+.newsletter-form input {
+  min-width: 0;
+}
+
+.page-banner {
+  background-image: radial-gradient(circle at top left, rgba(79, 163, 179, 0.18), transparent 38%), radial-gradient(circle at bottom right, rgba(15, 76, 129, 0.14), transparent 35%);
+}
+
+.page-banner h1,
+.page-banner p {
+  color: #fff;
+}
+
+.product-filter-section .btn-group .btn {
+  min-width: 8rem;
+}
+
+.product-filter-section .btn.active,
+.product-filter-section .btn:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.cart-thumb {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+}
+
+.cart-summary {
+  border-top: 1px solid #e9ecef;
+}
+
+.contact-card,
+.contact-form-card {
+  min-height: 100%;
+}
+
+.contact-icon {
+  font-size: 1.25rem;
+}
+
+.feature-dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  margin-top: 0.35rem;
+}
+
+@media (max-width: 767.98px) {
+  .hero-section {
+    padding-top: 3rem;
+  }
+
+  .site-header .navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .product-filter-section .btn-group {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section {
+    padding-bottom: 2rem;
+  }
+
+  .hero-card {
+    margin: 0 auto;
+  }
+
+  .callout-card .d-flex {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+}

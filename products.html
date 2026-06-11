@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore the OGGY Ecommerce product catalog with category filters, search, and premium product details." />
+  <title>Products | OGGY Ecommerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sBqTz0xquzNX0+oB1PtQ6CDEwGpne+1u1r/S5fDnnF6Z/BMgp3vZ0dG1QacylfQW" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.4/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+          <span class="brand-mark">O</span>
+          <span class="ms-2">OGGY Ecommerce</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <a class="btn btn-primary btn-sm ms-lg-4" href="cart.html"><i class="bi bi-cart-fill me-2"></i>View Cart</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner py-5 bg-secondary text-white text-center">
+      <div class="container">
+        <h1 class="display-6 fw-bold">Products</h1>
+        <p class="lead mb-0">Search and filter premium collections for home, lifestyle, tech, and accessories.</p>
+      </div>
+    </section>
+
+    <section class="product-filter-section py-5">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-md-6">
+            <div class="input-group shadow-sm rounded-pill overflow-hidden border border-secondary-subtle">
+              <span class="input-group-text bg-white border-0"><i class="bi bi-search"></i></span>
+              <input id="product-search" type="search" class="form-control border-0" placeholder="Search products" aria-label="Search products" />
+            </div>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="btn-group shadow-sm" role="group" aria-label="Product categories">
+              <button data-filter="all" class="btn btn-outline-primary active">All</button>
+              <button data-filter="audio" class="btn btn-outline-primary">Audio</button>
+              <button data-filter="wearables" class="btn btn-outline-primary">Wearables</button>
+              <button data-filter="home" class="btn btn-outline-primary">Home</button>
+              <button data-filter="accessories" class="btn btn-outline-primary">Accessories</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-grid py-4">
+      <div class="container">
+        <div id="products-list" class="row g-4">
+          <article class="col-sm-6 col-lg-4" data-category="audio">
+            <div class="card product-card h-100 border-0 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1512446812614-a72bb8554352?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="Studio wireless earbuds" />
+              <div class="card-body">
+                <span class="badge bg-primary mb-2">Audio</span>
+                <h5>Studio Wireless Earbuds</h5>
+                <p class="text-muted">Comfortable fit and studio-grade sound for everyday listening.</p>
+              </div>
+              <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                <strong>$149</strong>
+                <a href="cart.html" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-lg-4" data-category="wearables">
+            <div class="card product-card h-100 border-0 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="Sleek smartwatch" />
+              <div class="card-body">
+                <span class="badge bg-secondary mb-2">Wearables</span>
+                <h5>Pulse Smartwatch</h5>
+                <p class="text-muted">Track performance, notifications, and wellness with a sleek interface.</p>
+              </div>
+              <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                <strong>$159</strong>
+                <a href="cart.html" class="btn btn-sm btn-outline-secondary">Add to Cart</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-lg-4" data-category="home">
+            <div class="card product-card h-100 border-0 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="Minimalist home diffuser" />
+              <div class="card-body">
+                <span class="badge bg-success mb-2">Home</span>
+                <h5>Luna Diffuser Set</h5>
+                <p class="text-muted">A premium fragrance set tailored for calm and elegant interior styling.</p>
+              </div>
+              <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                <strong>$69</strong>
+                <a href="cart.html" class="btn btn-sm btn-outline-success">Add to Cart</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-lg-4" data-category="accessories">
+            <div class="card product-card h-100 border-0 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="Premium leather wallet" />
+              <div class="card-body">
+                <span class="badge bg-danger mb-2">Accessories</span>
+                <h5>Heritage Leather Wallet</h5>
+                <p class="text-muted">Slim, elegant design with premium finishing and RFID protection.</p>
+              </div>
+              <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                <strong>$85</strong>
+                <a href="cart.html" class="btn btn-sm btn-outline-danger">Add to Cart</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-lg-4" data-category="audio">
+            <div class="card product-card h-100 border-0 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1496180727794-817822f65950?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="Portable Bluetooth speaker" />
+              <div class="card-body">
+                <span class="badge bg-primary mb-2">Audio</span>
+                <h5>Atlas Bluetooth Speaker</h5>
+                <p class="text-muted">Portable, powerful sound designed for premium wireless playback anywhere.</p>
+              </div>
+              <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                <strong>$199</strong>
+                <a href="cart.html" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-sm-6 col-lg-4" data-category="wearables">
+            <div class="card product-card h-100 border-0 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="Fitness tracker band" />
+              <div class="card-body">
+                <span class="badge bg-secondary mb-2">Wearables</span>
+                <h5>Flex Fitness Band</h5>
+                <p class="text-muted">Minimal design with essential fitness tracking and long battery life.</p>
+              </div>
+              <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                <strong>$74</strong>
+                <a href="cart.html" class="btn btn-sm btn-outline-secondary">Add to Cart</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer bg-dark text-white py-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <a class="navbar-brand text-white fw-bold mb-3 d-inline-flex align-items-center" href="index.html">
+            <span class="brand-mark footer-mark">O</span>
+            <span class="ms-2">OGGY Ecommerce</span>
+          </a>
+          <p class="text-muted">A modern online store dedicated to premium goods, trusted checkout, and excellent customer care.</p>
+        </div>
+        <div class="col-md-2">
+          <h6 class="text-uppercase text-muted mb-3">Quick Links</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6 class="text-uppercase text-muted mb-3">Resources</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6 class="text-uppercase text-muted mb-3">Contact</h6>
+          <p class="text-muted mb-1"><i class="bi bi-envelope-fill me-2"></i>hello@oggyecommerce.com</p>
+          <p class="text-muted"><i class="bi bi-telephone-fill me-2"></i>+1 (800) 123-4567</p>
+        </div>
+      </div>
+      <div class="mt-5 pt-4 border-top border-white-10 text-center text-muted small">© 2026 OGGY Ecommerce. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-DBjhmr+1F4Yh8fepP8t4HKJEZKzVhXqwLje4VEX+uBecDNOi37m3NizW0nQw+VKb" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
